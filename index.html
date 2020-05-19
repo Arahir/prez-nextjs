@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/moon.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Nextjs</h1>
+          <img src="https://media.giphy.com/media/jy7N0xDpaeIHGn0nVc/giphy.gif"></img>
+        </section>
+        <section>
+          <img src="./why.png" alt="">
+        </section>
+        <section>
+          <h3>https://shouldibuildasinglepageapp.com</h3>
+          <iframe
+            src="https://shouldibuildasinglepageapp.com/"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <section>
+          <section>
+            <h3>Pre Rendering</h3>
+            <img src="https://media.giphy.com/media/3o7WIxxI7tLStjR2p2/giphy.gif" alt="">
+          </section>
+          <section>
+            <h3>React</h3>
+            <img src="./no-pre-rendering.png" alt="">
+          </section>
+          <section>
+            <h3>Nextjs</h3>
+            <img src="./pre-rendering.png" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Static Rendering</h3>
+            <p>Est ce que ma page dépend d'une action utilisateur?</p>
+            <img src="./static-generation.png" alt="">
+          </section>
+          <section>
+            <h3>Static Rendering With Data O.O</h3>
+            <img src="./staticprops.png" alt="">
+          </section>
+          <section>
+            <h3>Server Side Rendering</h3>
+            <img src="./server-side-rendering.png" alt="">
+          </section>
+          <section>
+            <h3>Server Side Rendering</h3>
+            <img src="./ssr.png" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <h3>Routing</h3>
+            <img src="https://media.giphy.com/media/dVu6tfWG6Rpe2t9oCR/giphy.gif" alt="">
+          </section>
+          <section>
+            <h3>Routing</h3>
+            <img src="./routing.png" alt="">
+          </section>
+        </section>
+        <section>
+          <h3>Demo</h3>
+          <img src="https://media.giphy.com/media/UrEQirmnMPxBwToULv/giphy.gif" alt="">
+        </section>
+        <section>
+          <section>
+            <h3>_app.js</h3>
+            <p>-> sert à l'initialisation de chaque page</p>
+            <img src="./_app.png" alt="">
+          </section>
+          <section>
+            <h3>_document.js</h3>
+            <img src="https://media.giphy.com/media/szmc6VgQeft0A/giphy.gif" alt="">
+          </section>
+        </section>
+        <section>
+          <h3>Bonus - Api</h3>
+          <img src="./api.png" alt="">
+        </section>
+        <section>
+          <h3>Question?</h3>
+          <img src="https://media.giphy.com/media/cMVgEhDeKzPwI/giphy.gif" alt="">
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        hash: true,
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/highlight/highlight.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          // Zoom in and out with Alt+click
+          { src: "plugin/zoom-js/zoom.js", async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
